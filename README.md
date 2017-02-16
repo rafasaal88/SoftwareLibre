@@ -25,8 +25,8 @@
 <li> Las 4 libertades de SL.
 <li> Permisos para que el receptor del programa pueda ejercer esas libertades.
 <li> Restricciones:
-<ul> <li> Dar crédito a los autores originales en caso de redistribución.
-<ul> <li> No pueden ir en contra de las libertades del SL.  
+<li> <ul> Dar crédito a los autores originales en caso de redistribución.
+<li> <ul> No pueden ir en contra de las libertades del SL.  
 
 ### Free software → no significa software gratuito
 <li> Sin embargo:
@@ -46,7 +46,7 @@ de programas
 
 
 ### Términos relacionados
-<li> **Open Source Software (programas de fuente abierta):**
+<li> **Open Source Software (programas de fuente abierta):**  
 
 <li><ul> Promovido por Eric Raymond y la Open Source Initiative.
 
