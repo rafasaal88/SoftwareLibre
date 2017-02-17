@@ -6,8 +6,11 @@
 ### Características del Sofware privativo (Antónimo del Software Libre)
 
 - El comercializador impone las condiciones de uso.
+
 - Si tiene errores, solo el productor puede arreglarlo.
+
 - No se puede adaptar un programa a necesidades específicas.  
+
 - Modelo de ingresos basado en prohibir el derecho de copia.
 
 ### Definición de Software Libre, tal y como fue concebio por Richard Stallman
@@ -22,26 +25,32 @@
 
 ### Licencias
 Es el mecanismo que se utiliza para garantizar, de acuerdo con la legalidad vigente lo siguiente:
+
 - Las 4 libertades de SL.
+
 - Permisos para que el receptor del programa pueda ejercer esas libertades.
+
 - Restricciones:
+
   - Dar crédito a los autores originales en caso de redistribución.
+
   - No pueden ir en contra de las libertades del SL.  
 
 ### Free software → no significa software gratuito
 - Sin embargo:
-  - por la 3ª libertad, cualquiera que posea un programa
-puede redistribuirlo sin pedir contraprestación
-económica ni permiso.
 
-  - lo que hace que el coste de un programa tienda al coste
-marginal de copia.
+  - por la 3ª libertad, cualquiera que posea un programa puede redistribuirlo sin pedir contraprestación económica ni permiso.
+
+  - lo que hace que el coste de un programa tienda al coste marginal de copia.
 
 - Puede cobrarse por el valor añadido que supone:
+
   - dar una cierta garantía
-  - selección, actualización y organización de un conjunto
-de programas
+
+  - selección, actualización y organización de un conjunto de programas
+
   - servicio técnico
+  
   - personalización del software, etc.
 
 
