@@ -664,3 +664,63 @@ ESTE PROGRAMA SE PROPORCIONA TAL CUAL, SIN GARANTÍAS EXPRESAS NI IMPLÍCITAS, T
   - GNU LIBRARY GENERAL PUBLIC LICENSE Version 2 (LGPLv2), June 1991
     - Fue introducida al mismo tiempo que la GPLv2 y numerada con la versión 2 para denotar que ambas son complementarias.
     - Los números de versiones divergieron en 1999 cuando la versión 2.1 de LGPL fue liberada, y esta fue renombrada en GNU Lesser General Public License (LGPL).
+  - Como licenciar un librería con GPLv3 o LGPLv3?
+    - FSF recomienda usar LGPLv3 por razones estratégicas.
+      - Cuando las características de la biblioteca libre están ya disponibles para software privativo a través de otras bibliotecas alternativas.
+      - En ese caso, la biblioteca no puede dar al software libre ninguna ventaja en particular, así que es mejor utilizar la LGPL para difundir el uso de esa biblioteca.
+      - Esta es la razón por la que usamos la LGPL para la biblioteca C de GNU.
+    - FSF recomienda como norma general usar GPLv3.
+      - Una colección de potentes bibliotecas protegidas por la GPL que no tenga equivalente en el software privativo será una ventaja importante para el desarrollo posterior de software libre, y algunos proyectos tomarán la decisión de hacer software libre para poder utilizar estas bibliotecas.
+      - Esto puede hacer que proyectos universitarios o incluso comerciales se conviertan en SL.
+      - Ayudar a competir a los proyectos de SL frente a los privativos.
+
+
+- Licencia Sleepycat o Berkeley Database License
+  - Es la licencia bajo la que la empresa Sleepycat distribuye sus programas, entre ellos el conocido Berkeley DB.
+    - Obliga a ciertas condiciones siempre que se redistribuye el programa o trabajos derivados del programa.
+    - Obliga a ofrecer el código fuente (incluidas las modificaciones, si se trata de un trabajo derivado), y a que la redistribución imponga al receptor las mismas condiciones.
+  - Aunque mucho más corta que la GNU GPL, es muy similar a ella en sus efectos principales.
+  - Compatible GPL.
+
+
+- Licencia eCos 2.0
+  - Licencia bajo la que se distribuye eCos, un sistema operativo de tiempo real.
+  - Es una modificación de la GNU GPL que no considera que el código que se enlace con programas protegidos por ella queden sujetos a las cláusulas de la GNU GPL si se redistribuyen.
+  - Efectos son similares a los de la GNU LGPL.
+  - Compatible GPL.
+  - La licencia eCos 1.1 no es una licencia de software libre porque:
+  - requiere enviar todas las versiones modificadas que se publiquen a un desarrollador inicial especificado.
+  - Existe léxico en la licencia de cuyo significado no estamos seguros y que podría resultar problemático.
+
+- Licencia Pública General Affero de GNU Versión 3 (AGPLv3)
+  - Fue creada para obligar a los proveedores de servicios software en red a la distribución del código fuente ya que al no distribuir software alguno aplicando la GPL no tenían porqué suministrar los fuentes.
+  - Sus términos son en la práctica los mismos de la GPLv3, con un párrafo adicional en la sección 13 que permite a los usuarios del software bajo esta licencia en una red, recibir la fuente de tal software.
+  - Compatibilidad
+    - No compatible con GPLv2.
+    - No con la GPLv3 en sentido estricto:
+      - no se puede copiar o modificar código bajo la AGPL de GNU y licenciarlo bajo la GPLv3, o viceversa.
+    - Tanto la GPLv3 como la AGPLv3 incluyen una claúsula (13 en cada una de ellas) que juntas logran la compatibilidad mutua de ambas licencias.
+      - Estas cláusulas permiten explícitamente la convivencia de ambas licencias (cada parte conserva la suya) y el programa que surge como combinación mantiene las restricciones de uso y distribución sobre redes especificados en la AGPLv3.
+  - La FSF recomienda el uso de la AGPL de GNU para todo el software que se ejecute de forma habitual en una red.
+  - Licencia Pública General Affero Versión 1 (AGPLv1.0)
+    - Incompatible con la GPL de GNU.
+    - Consiste en la versión 2 de la GPL de GNU, con una sección adicional agregada por Affero con el consentimiento de la FSF.
+    - La nueva sección, 2(d), cubre la distribución de programas de aplicación a través de servicios web o redes de computadoras.
+    - Esta licencia fué reemplazada por la AGPLv3.
+
+
+- Licencia Pública IBM Versión 1.0 (IBMPLv1)
+  - Contiene cláusulas legales que la hacen incompatible con la GPL de GNU.
+  - Es una licencia que permite la redistribución binaria de trabajos derivados sólo si (entre otras condiciones) se preve algún mecanismo para que quien reciba el programa pueda recibir su código fuente.
+    - La redistribución del código fuente se ha de hacer bajo la misma licencia.
+  - Obligar al que redistribuye el programa con modificaciones a licenciar automática y gratuitamente las patentes que puedan afectar a esas modificaciones, y que sean propiedad del redistribuidor.
+
+
+- Mozilla Public License Versión 2 (MPLv2)
+  - Ejemplo de licencia libre con origen en una empresa.
+  - Es una evolución de la primera licencia libre que tuvo el Netscape Navigator.
+    - En su momento fue muy importante por ser la primera vez que una empresa muy conocida decidió distribuir un programa bajo su propia licencia libre.
+  - La sección 3.3 le da una compatibilidad indirecta con las licencias de GNU (GPLv2, GPLv3, LGPLv2.1, AGPLv3.0) y versiones posteriores.
+    - Si se combina software bajo MPLv2 con software bajo una licencia GNU, la parte MPLv2 seguirá estando de forma dual bajo la MPLv2 y la licencia GNU. La obra total estará bajo la licencia GNU.
+    - Quien publica bajo la MPL 2.0 puede elegir eliminar esta compatibilidad, añadiendo una indicación en las notas sobre la licencia que diga que esta obra es «Incompatible With Secondary Licenses.» (incompatible con licencias secundarias).
+      - Cualquier obra que incluya esta indicación no es compatible con la GPL y la AGPL.
