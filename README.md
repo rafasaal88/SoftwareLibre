@@ -724,3 +724,168 @@ ESTE PROGRAMA SE PROPORCIONA TAL CUAL, SIN GARANTÍAS EXPRESAS NI IMPLÍCITAS, T
     - Si se combina software bajo MPLv2 con software bajo una licencia GNU, la parte MPLv2 seguirá estando de forma dual bajo la MPLv2 y la licencia GNU. La obra total estará bajo la licencia GNU.
     - Quien publica bajo la MPL 2.0 puede elegir eliminar esta compatibilidad, añadiendo una indicación en las notas sobre la licencia que diga que esta obra es «Incompatible With Secondary Licenses.» (incompatible con licencias secundarias).
       - Cualquier obra que incluya esta indicación no es compatible con la GPL y la AGPL.
+  - Su antecesora, la MPLv1.1
+    - No posee un copyleft fuerte.
+    - Posee algunas restricciones complejas que la hacen incompatible con la GPL de GNU.
+      - Un módulo cubierto por la GPL y otro por la MPL no pueden ser legalmente enlazados.
+      - Por esta razón la FSF insta a no utilizar la MPLv1.1
+    - Sin embargo, la MPL 1.1 en su sección 13 permite a un programa (o a partes del mismo) ofrecer la elección de otra licencia simultánea.
+
+
+### Licencias en el software libre: Distribución bajo varias licencias
+
+- Como cada publicación es una obra nueva el autor puede distribuir versiones cuya única diferencia sea la licencia.
+- Dependiendo de lo que el usuario quiera hacer con el software, se encontrará con que tiene obedecer una licencia u otra.
+Librería Qt ( http://qt-project.org/ )
+  - Trolltech distribuía Qt con una licencia propietaria, aunque eximía del pago a los programas que hicieran uso de la misma sin ánimo de lucro.
+  - Por esta causa y por sus características técnicas fue elegida por el proyecto KDE.
+  - La FSF entendía que KDE dejaba de ser entonces software libre en su conjunto, al depender de una biblioteca propietaria.
+  - Cuando apareció GNOME (GTK) como competidor libre de KDE Trolltech decidió utilizar el sistema de doble licencia:
+    - El software bajo GPL podía usar una versión de Qt GPL,
+    - El software con licencias incompatibles con la GPL, como las privativas, debía comprarles una licencia.
+  - Esta solución satisfizo a todas las partes, KDE es considerado SL.
+  - Hoy día Qt puede usarse como SL con licencias GPLv3 y LGPLv2.1 o bajo las condiciones comerciales de la distribuidora Digia.
+
+
+- Otros ejemplos conocidos de licencia dual son:
+  - StarOffice (propietario Sun Microsystems) y OpenOffice.org (SL),
+  - Netscape Communicator (propietario) y Mozilla (SL).
+- Aunque en muchos casos los proyectos libres fueron versiones limitadas de sus hermanos propietarios, con el tiempo muchos de ellos independizándose bastante de la versión propietaria.
+
+
+### Licencias en el software libre: Reflexiones sobre licencias
+
+- Para que SL lo sea hay que licenciarlo con una licencia de SL.
+- Es muy importante decidir pronto qué licencia va a tener un proyecto, sus ventajas e inconvenientes.
+  - una modificación posterior suele ser muy difícil,
+    - sobre todo si el número de contribuciones externas es muy grande.
+- Como norma general GNU recomienda usar licencias GNU con copyleft.
+- Eventualmente podrían usarse licencias compatibles GNU.
+- Se deben tener en cuenta las compatibilidades entre licencias, especialmente entre las GNU.
+
+
+### Licencias en el software libre: Documentación de programas
+
+- La documentación que viene con un programa es parte integrante del mismo, igual que los comentarios del código fuente.
+  - Así lo reconoce la Ley de Propiedad Intelectual de España y otros muchos países.
+- Por tanto se le deben aplicar las mismas libertades.
+- Evoluciona de la misma manera que el programa.
+  - Toda modificación que se haga de un programa requiere un cambio simultáneo y consistente en su documentación.
+- La mayor parte de esta documentación suele estar codificada como ficheros de texto sin formato, ya que se pretende que sea universalmente accesible con un entorno de herramientas mínimo
+- El software suele incluir:
+  - una pequeña introducción al programa (README o LEEME),
+  - instrucciones de instalación (INSTALL),
+  - alguna historia sobre la evolución pasada y futura del programa (changelog y TODO),
+  - autoría y condiciones de copia (AUTHORS y copyright o COPYING),
+  - así como las instrucciones de uso.
+- Todas ellas deberían ser libremente modificables, menos:
+  - La autoría: sólo se deberían añadir nombres y créditos, sin borrar nada
+  - Las condiciones de copia: sólo deben modificarse si ellas lo permiten.
+- Las instrucciones de uso suelen estar codificadas en formatos más complejos, ya que suelen ser documentos más largos y ricos.
+  - El software libre exige que esta documentación pueda ser modificada fácilmente,
+    - lo que a su vez obliga a usar formatos denominados transparentes, de especificación conocida y procesables por herramientas libres, como son:
+      - el texto plano
+      - El formato de páginas de manual de Unix,
+      - TexInfo,
+      - LaTeX o
+      - DocBook,
+    - Para una mejor visualización es recomendable incorporar el resultado de transformar esos documentos fuente en formatos como HTML, PDF o RTF.
+- Muchas veces se hace documentación sobre programas por parte de terceros que no han intervenido en el desarrollo.
+  - Estos documentos son algo intermedio entre la mera documentación de programas y los artículos o libros muy técnicos y prácticos.
+    - HOWTOs, COMOs o recetarios,
+    - documentación más amplia, abarcando varios programas y su integración, comparando soluciones, etc.
+    - Tutoriales y manuales de referencia.
+    - Preguntas frecuentes con sus respuestas(FAQs o PUFs).
+    - En esta categoría podemos también incluir otros documentos técnicos, no necesariamente sobre programas, ya sean las instrucciones para cablear una red local, construir una cocina solar, reparar un motor, etc.
+
+- Después de darse cuenta que un documento no es lo mismo que un programa, Richard Stallman promovió una licencia para los documentos que acompañen a los programas y para otros documentos de carácter técnico o didáctico.
+- La documentación del software libre debe ser documentación libre.
+
+**Licencia de Documentación Libre de GNU, versión 1.3 (GFDLv1.3)**
+
+  - GPL para licenciar la documentación del proyecto GNU.
+  - Puede utilizarse en cualquier clase de documento.
+  - Esta licencia de documentación de la misma manera que las licencias de software libre proporcionan el derecho copiar,redistribuir, y modificar.
+  - Requiere poner a disposición de quien lo requiera una “copia transparente” (fuentes) del documento, además de las “copias opacas” (objetos), en una analogía entre los fuentes y los objetos de los programas.
+  - Tiene clausula Copyleft que exige que las copias y derivados sean distribuidos bajo la misma licencia.
+  - Incorpora una claúsula anti DRM (Digital rights management) o gestión digital de derechos.
+  - Exige que se mantengan las notas de copyright de las versiones anteriores.
+    - Aspecto polémico porque requiere que el documento lleve un historial completo de copyrights que puede llegar a ser muy largo.
+  - Permite la existencia de “secciones invariantes” que impide que se modifiquen determinadas secciones (salvo permiso del autor original)
+    - característica esta última muy polémica que hace que no sea considerada como libre por algunas asociaciones de software libre.
+    - Realmente las secciones invariantes se limitan a textos no técnico: la portada, el indice, etc, pero es difícil saber que puede y que no puede ser una sección invariante.
+  - No es compatible con la GPL ni con ninguna de las licencias Creative Commons.
+  - La distinción entre copias transparentes (fichero latex asociado) y la copia opaca (el pdf ), ha creado problemas porque en ciertas obras no queda claro la diferencia, y hace dificil su distribución,
+    - por ejemplo, en obras musicales significaría que tendrías que distribuir la partitura por ejemplo.
+  - Tiene restricciones sobre si se pueden o no hacer copias en papel y el número de copias que se podrían realizar.
+  - Se requiere que se incluya el texto completo de la licencia en la obra licenciada.
+  - Wikipedia en 2001 usó esta licencia
+    - No existía otra.
+      - Creative Commons (CC-BY-SA) surge entre 2002 y 2003.
+    - La complejidad de la licencia , que era poco práctica, que estaba orientada a obra técnica y que se estaba expandiendo el uso de la CC-BY-SA provocaron la migración a CC-BY-SA.
+      - Esto fue posible gracias a que en la Wikipedia se hacia uso de la licencia GFDL 1.2 “or later”, ese “or later” hizo posible el relicenciamiento gracias a que la FSF sacó la versión v1.3 de la GFDL en la que decía en una clausula que esta licencia era compatible con la CC-by-sa, sin embargo la FSF puso una condición y es que hubiera un plazo de tiempo para realizar el cambio fuera del cual no se pudieran relicenciar las obras GFDL a CC-by-sa.
+
+
+**Licencias de otras recursos libres: Licencias Creative Commons**
+
+- Creative Commons es una organización sin ánimo de lucro fundada en 2001 por expertos en (i) propiedad intelectual, (ii) derecho en la sociedad de la información, e (iii) informática con el propósito de fomentar la existencia, conservación y accesibilidad de recursos intelectuales cedidos a la comunidad de diversas maneras.
+- Está basada en la idea de que algunas personas pueden no querer ejercer sobre su obra todos los derechos de propiedad intelectual que les permite la ley, ya que eso puede impedir una amplia distribución.
+- Cada licencia de Creative Commons es vigente en todo el mundo y dura tanto como duran los derechos de propiedad intelectual aplicables.
+- Licencia con un diseño de "tres capas".
+  - Código Legal (Legal Code).
+    - Texto legal tradicional, en el tipo de lenguaje y formato de texto conocidos y amados por los abogados.
+  - Texto legible por humanos (Commons Deed).
+    - Texto que resume y expresa algunos de los términos y condiciones más importantes de la licencia.
+  - Código legible por las máquinas (Digital Code).
+    - Un resumen de los derechos y obligaciones clave escritos en un formato tal que los sistemas informáticos, motores de búsqueda y otras formas de tecnología pueden entender.
+    - Para lograr esto se ha desarrollado un modo estandarizado de describir las licencias que el software puede entender denominado CC Rights Expression Language (CC REL) usando RDF (Resource Description Framework), XMP (Extensible Metadata Platform) principalmente.
+- Libertades que puede ceder el autor:
+  - Reconocimiento ( Attribution):
+    - Permite distribuir, mezclar, retocar y crear a partir de su obra, incluso con fines comerciales, siempre que le sea reconocida la autoría de la creación original.
+  - No Comercial (Non Commercial ):
+    - Permite distribuir, mezclar, retocar, y crear a partir de tu obra de manera no comercial.
+  - Sin Obra Derivada (No Derivate Works):
+    - Permite a otros distribuir la obra íntegra y sin cambios.
+  - Compartir Igual ( Share Alike):
+    - Permite distribuir, mezclar, retocar y crear a partir de su obra, siempre y cuando se licencien las nuevas creaciones bajo las mismas condiciones.
+- La versión 1.x de la licencia creative commons contemplaba 11 tipos de licencias fruto de combinaciones de las anteriores libertades.
+- Como el 98% usaban Reconocimiento ( Attribution), la versión 2.x y la actual 3.0, consideró como obligatoria esta característica en todas sus licencias, reducirlas a 6 licencias.
+- Licencias creative commons.
+  - Reconocimiento (Attribution) CC BY
+    - Permite distribuir, mezclar y construir a partir de su obra, incluso con fines comerciales, siempre que sea reconocida la autoría de la creación original.
+  - Reconocimiento-CompartirIgual (Attribution-ShareAlike) CC BY-SA
+    - Permite distribuir, mezclar, crear a partir de la obra original, incluso con fines comerciales, dando crédito al autor original y se licencien las nuevas creaciones bajo las mismas condiciones ("copyleft").
+    - La usa Wikipedia, y se recomienda para materiales que se beneficiarían de incorporar contenido de Wikipedia.
+  - Reconocimiento-SinObraDerivada (Attribution-NoDerivateWorks) CC BY-ND
+    - Permite la redistribución, comercial o no comercial, si la obra circula íntegra y sin cambios, dándo crédito.
+  - Reconocimiento-NoComercial (Attribution-NonCommercial) CC BY-NC
+    - Permite distribuir, mezclar, retocar, y crear a partir del original dando crédito y de manera no comercia.
+  - Reconocimiento-NoComercial-CompartirIgual
+(Attribution-NonCommercial-ShareAlike) CC BY-NC-SA
+    - Permite distribuir, mezclar, retocar, y crear a partir de tu obra de modo no comercial, dando crédito y licenciando bajo las mismas condiciones.
+  - Reconocimiento-NoComercial-SinObraDerivada (Attribution-NonCommercial-NoDerivateWorks) CC BY-NC-ND
+    - Es la más restrictiva de las seis licencias Sólo permite descargar las obras y compartirlas con otras personas, dando crédito y sin comercializar.
+
+- Otras herramientas para pasar a dominio público.
+  - Un trabajo está en dominio público cuando se puede usar por cualquiera de cualquier forma sin ninguna restricción de copyright.
+  - Herramienta CC0
+    - Es la opción "no copyright reserved" de Creative Commons
+    - Permite a los licenciantes/autores renunciar a todos sus derechos y ubicar su obra en el dominio público.
+  - Sello de Dominio Público
+    - Permite que cualquier usuario "marque" una obra que ya no está afectada por copyright como parte del dominio público haciendo más fácil que sea utilizada por otros usuarios.
+- Otras licencias
+  - CC-GNU GPL. Esta licencia añade los metadatos de Creative Commons y el resumen (Commons Deed) a la licencia GNU General Public License de la Free Software Foundation.
+  - CC-GNU LGPL. Esta licencia añade los metadatos de Creative Commons y el resumen (Commons Deed) a la licencia GNU Lesser General Public License de la Free Software Foundation.
+
+- Recomendaciones de la FSF
+  - De las seis licencias básicas Creative Commons sólo dos son estrictamente libres e incompatibles GPL y GFDL:
+    - Reconocimiento (BY) y
+    - Reconocimiento-CompartirIgual (BY-SA) (con copyleft)
+  - Tanto las obras en dominio público como la licencia laxa proporcionada por CC0 son compatibles con la GPL de GNU.
+    - FSF recomienda usar CC0 para publicar obras en el dominio público.
+  - Para obras que expresan un punto de vista (por ejemplo, una opinión o un testimonio), recomienda:
+    - GNU Verbatim Copying License.
+    - Licencia CC Reconocimiento-SinObrasDerivadas 3.0 (CC-BY-ND)
+    - Es la licencia que usa el sitio web de la FSF.
+    - Proporciona los mismos permisos que la “Verbatim Copying”, pero es más detallada.
+    - La recomendamos especialmente para obras de opinión hechas en audio y/o vídeo
